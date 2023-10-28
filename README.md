@@ -44,7 +44,7 @@ This Takuya Kawamura's portfolio for the bootcamp and general public. This portf
 
 ## Important note
 
-This is the Takuya's portfolio mock-up for the bootcamp project. Some of the works are just an illustration and links will take you to a random website.
+This is the Takuya's portfolio mock-up for the bootcamp project. The design is provided. Some of the works are just an illustration and links will take you to a random website.
 
 ### Website Preview
 
@@ -64,7 +64,7 @@ You can find the github preview page below
 
 This is a mock-up website for the bootcamp. The images and its codes are not copyrigt free.
 
-### Third-party servic
+### Third-party service
 
 [Google fonts](https://fonts.google.com/)
 
