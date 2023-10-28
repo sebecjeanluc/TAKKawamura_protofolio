@@ -130,7 +130,7 @@ header h1 {
 	background: rgba(255, 255, 255, 0.8);
 	padding: 10px var(--headerMargin) 10px 10px;
 	right: 2%;
-	bottom: 10%;
+	bottom: 20%;
 	z-index: 1;
 }
 
@@ -167,4 +167,44 @@ header h1 {
 
 #aboutme div p {
 	padding-left: 20px;
+}
+
+#work .grid-container {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		'item1 item1'
+		'item1 item1'
+		'item2 item3'
+		'item4 item5';
+}
+
+.grid-inner {
+	height: 300px;
+	background-position: top;
+	background-size: 80%;
+	background-repeat: no-repeat;
+}
+
+#item1 {
+	grid-area: item1;
+	background-image: url(../images/onescene.png);
+}
+
+#item2 {
+	grid-area: item2;
+}
+
+#item3 {
+	grid-area: item3;
+}
+
+#item4 {
+	grid-area: item4;
+}
+
+#item5 {
+	grid-area: item5;
 }
