@@ -24,10 +24,11 @@ body {
 }
 
 #blur_bg {
-	position: absolute;
+	position: fixed;
+	left: 0;
 	top: 0;
 	width: 100%;
-	height: 100%;
+	min-height: 100vh;
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 	background-color: rgba(255, 255, 255, 0.15);
@@ -41,6 +42,7 @@ body p {
 
 section {
 	padding: 20px 0;
+	max-width: 1280px;
 }
 
 a {
@@ -147,64 +149,156 @@ header h1 {
 	display: flex;
 }
 
-.flex-container h2 {
+.flex-container .content-title {
 	text-align: right;
-	margin-left: 10%;
-	padding: 20px;
+	margin-left: 100px;
+	padding-right: 20px;
 	border-right: 3px solid var(--textBlack);
 }
 
-#aboutme div {
+.flex-container .content-title h2 {
+	width: 130px;
+}
+
+#aboutme .content {
 	display: flex;
 	margin-right: var(--sectionMargin);
 }
 
-#aboutme div img {
+#aboutme .content img {
 	width: 200px;
 	height: 200px;
 	margin-left: 10px;
 }
 
-#aboutme div p {
+#aboutme .content p {
 	padding-left: 20px;
 }
 
 #work .grid-container {
 	display: grid;
-	width: 100%;
+	width: 80%;
+	/* border: 1px solid red; */
+	margin: 0 40px;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 200px 200px 200px;
 	grid-template-areas:
 		'item1 item1'
-		'item1 item1'
 		'item2 item3'
-		'item4 item5';
+		'item4 item5'
+		'item6 item7';
 }
 
 .grid-inner {
-	height: 300px;
+	margin: 10px;
+	border: 3px solid var(--white);
 	background-position: top;
-	background-size: 80%;
+	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.grid-inner a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	background-color: transparent;
+}
+
+.grid-inner a:hover {
+	cursor: pointer;
+	background-color: var(--white);
+	opacity: 0.7;
+	transition: all 0.2s ease-out;
 }
 
 #item1 {
 	grid-area: item1;
+	height: 400px;
 	background-image: url(../images/onescene.png);
 }
 
 #item2 {
 	grid-area: item2;
+	background-image: url(../images/miseenscene.png);
+	background-position: center;
 }
 
 #item3 {
 	grid-area: item3;
+	background-image: url(../images/suiki_hp.png);
 }
 
 #item4 {
 	grid-area: item4;
+	background-image: url(../images/esquisse_top.png);
 }
 
 #item5 {
 	grid-area: item5;
+	background-image: url(../images/pips.png);
+}
+
+#item6 {
+	grid-area: item6;
+	background-image: url(../images/enConnect_top.png);
+}
+
+#item7 {
+	grid-area: item7;
+	background-image: url(../images/markupDR-parts.png);
+}
+
+.work-container {
+	display: block;
+	width: 250px;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	box-shadow: 0px 20px 60px #bebebe, 47px 20px 137px var(--black);
+	background: rgba(255, 255, 255, 0.9);
+	padding: 10px 0 10px 20px;
+}
+
+#contactme .content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#contactme .content ul {
+	display: flex;
+	width: 100%;
+	margin-right: var(--sectionMargin);
+	justify-content: space-between;
+}
+
+#contactme .content ul li {
+	margin: 0 auto;
+}
+
+#contactme .content ul li:nth-child(odd) a {
+	border-bottom: 3px solid var(--black);
+}
+
+#contactme .content ul li:nth-child(even) a {
+	border-bottom: 3px solid var(--white);
+}
+
+#contactme .content ul li:nth-child(odd) a:hover {
+	border-bottom: 3px solid var(--white);
+	transition: all 0.3s ease-out;
+}
+
+#contactme .content ul li:nth-child(even) a:hover {
+	border-bottom: 3px solid var(--black);
+	transition: all 0.3s ease-out;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
 }
