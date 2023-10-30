@@ -166,7 +166,7 @@ header h1 {
 	margin-right: var(--sectionMargin);
 }
 
-#aboutme .content img {
+#aboutme .content figure img {
 	width: 200px;
 	height: 200px;
 	margin-left: 10px;
@@ -212,6 +212,12 @@ header h1 {
 	background-color: var(--white);
 	opacity: 0.7;
 	transition: all 0.2s ease-out;
+}
+
+.grid-inner a.maintenance:hover {
+	cursor: not-allowed;
+	background-color: var(--black);
+	opacity: 0.9;
 }
 
 #item1 {
@@ -302,4 +308,84 @@ footer {
 	justify-content: center;
 	align-items: center;
 	height: 100px;
+}
+
+/* tablet */
+@media screen and (max-width: 820px) {
+	body {
+		display: block;
+	}
+	.nav-container {
+		display: none;
+	}
+	.flex-container {
+		flex-direction: column;
+	}
+
+	.flex-container .content-title {
+		text-align: left;
+		margin: 20px;
+		border-right: none;
+	}
+	.flex-container .content-title h2 {
+		display: inline-block;
+		width: auto;
+		border-bottom: 2px solid var(--textBlack);
+		font-size: 32px;
+	}
+	#aboutme .content p {
+		font-size: 16px;
+	}
+
+	#work .grid-container {
+		margin: 0;
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			'item1'
+			'item2'
+			'item3'
+			'item4'
+			'item5'
+			'item6'
+			'item7';
+	}
+	#contactme .content ul {
+		margin-right: 0;
+	}
+}
+
+/* mobile */
+@media screen and (max-width: 420px) {
+	#keyvisual {
+		padding: 0;
+	}
+	#aboutme .content {
+		flex-direction: column;
+		margin: 5px;
+	}
+
+	.flex-container .content-title h2 {
+		font-size: 24px;
+	}
+
+	#aboutme .content figure img {
+		margin: 10px;
+	}
+
+	#aboutme .content p {
+		margin: 0;
+		padding-left: 10px;
+		font-size: 18px;
+	}
+
+	#contactme .content ul {
+		flex-direction: column;
+	}
+
+	#contactme .content ul li {
+		margin: 10px 10px;
+		padding-left: 10px;
+	}
 }
