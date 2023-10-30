@@ -157,7 +157,8 @@ header h1 {
 }
 
 .flex-container .content-title h2 {
-	width: 130px;
+	width: 150px;
+	font-size: 42px;
 }
 
 #aboutme .content {
