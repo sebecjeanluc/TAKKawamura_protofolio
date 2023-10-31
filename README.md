@@ -15,9 +15,6 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#important-note">Important Note</a></li>
     <li><a href="#website-preview">Website Preview</a></li>
-      <ul>
-        <li><a href="#developer-note">Developer's note</a></li>
-      </ul>
     <li><a href="#credits">Credits</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -49,13 +46,26 @@ This is the Takuya's portfolio mock-up for the bootcamp project. The design is p
 ### Website Preview
 
 For mobile with max-width of 420 px
-![Soon will be added](#)
+
+<p float="left">
+  <img src="./assets/images/portfolio_sp1.png" alt="Portfolio for smartphone" width="200"/>
+  <img align="top"; src="./assets/images/portfolio_sp2.png" alt="Portfolio for smartphone" width="200"/>
+  <img align="top" src="./assets/images/portfolio_sp3.png" alt="Portfolio for smartphone" width="200"/>
+</p>
 
 For tablet with max-width of 820 px
-![Soon will be added](#)
 
-For desktok with max-width of 1280 px
-![Soon will be added](#)
+<p float="left">
+  <img src="./assets/images/portfolio_tb1.png" alt="Portfolio for smartphone" width="200"/>
+  <img align="top"; src="./assets/images/portfolio_tb2.png" alt="Portfolio for smartphone" width="200"/>
+  <img align="top" src="./assets/images/portfolio_tb3.png" alt="Portfolio for smartphone" width="200"/>
+</p>
+
+For desktop with max-width of 1280 px
+
+<p float="left">
+  <img src="./assets/images/portfolio_pc.png" alt="Portfolio for smartphone" width="200"/>
+</p>
 
 You can find the github preview page below
 [github preview page](https://sebecjeanluc.github.io/TakuyaKawamura_portfolio/)
