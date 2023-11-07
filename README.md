@@ -50,7 +50,6 @@ For mobile with max-width of 420 px
 <p float="left">
   <img src="./assets/images/portfolio_sp1.png" alt="Portfolio for smartphone" width="200"/>
   <img align="top"; src="./assets/images/portfolio_sp2.png" alt="Portfolio for smartphone" width="200"/>
-  <img align="top" src="./assets/images/portfolio_sp3.png" alt="Portfolio for smartphone" width="200"/>
 </p>
 
 For tablet with max-width of 820 px
@@ -58,7 +57,6 @@ For tablet with max-width of 820 px
 <p float="left">
   <img src="./assets/images/portfolio_tb1.png" alt="Portfolio for smartphone" width="200"/>
   <img align="top"; src="./assets/images/portfolio_tb2.png" alt="Portfolio for smartphone" width="200"/>
-  <img align="top" src="./assets/images/portfolio_tb3.png" alt="Portfolio for smartphone" width="200"/>
 </p>
 
 For desktop with max-width of 1280 px
